@@ -1,5 +1,16 @@
+<app-side-nav 
+  [sidenavTemplateRef]="navContent"
+  [direction]="'left'" 
+  [navWidth]="280" 
+  [duration]="0.5"></app-side-nav>
+
 <div class="main-container">
+  <app-header></app-header>
   <section>
     <router-outlet></router-outlet>
   </section>
 </div>
+
+<ng-template #navContent>
+  Side Nav Bar Content Here
+</ng-template>
